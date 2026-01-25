@@ -1,0 +1,69 @@
+:root {
+    --bg-oscuro: #0a0e1a;
+    --bg-bloque: #121b2d;
+    --cian: #00d9ff;
+    --texto-p: #cbd5e1;
+    --blanco: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--bg-oscuro);
+    color: var(--blanco);
+    line-height: 1.8;
+}
+
+header {
+    background: #020617;
+    height: 70px;
+    border-bottom: 2px solid var(--cian);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    height: 100%;
+}
+
+.logo { color: var(--cian); font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li a { color: white; text-decoration: none; margin-left: 25px; font-size: 0.85rem; text-transform: uppercase; transition: 0.3s; }
+nav ul li a:hover, nav ul li a.active { color: var(--cian); }
+
+.carrusel { height: 350px; overflow: hidden; position: relative; }
+.slider { display: flex; width: 200%; height: 100%; animation: slideMove 12s infinite ease-in-out; }
+.slide { width: 50%; height: 100%; position: relative; }
+.img-slider { width: 100%; height: 100%; object-fit: cover; }
+.texto-slide { position: absolute; bottom: 30px; left: 8%; background: rgba(0,0,0,0.8); padding: 15px; border-left: 4px solid var(--cian); }
+
+@keyframes slideMove {
+    0%, 45% { transform: translateX(0); }
+    50%, 95% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+main { max-width: 1000px; margin: 40px auto; padding: 0 5%; }
+h1, h2 { color: var(--cian); font-size: 2.2rem; }
+.articulo-fluido { margin-bottom: 40px; }
+.img-articulo { width: 100%; max-width: 500px; border-radius: 8px; margin: 15px 0; border: 1px solid var(--cian); }
+.separador { border: 0; border-top: 1px solid #1e293b; margin: 40px 0; }
+
+#check { display: none; }
+.checkbtn { display: none; flex-direction: column; cursor: pointer; }
+.checkbtn span { width: 25px; height: 3px; background: white; margin: 2px 0; }
+
+@media (max-width: 768px) {
+    .checkbtn { display: flex; }
+    nav { position: fixed; width: 100%; height: 100vh; background: #020617; top: 70px; left: -100%; transition: 0.5s; }
+    nav ul { flex-direction: column; align-items: center; padding-top: 40px; }
+    #check:checked ~ nav { left: 0; }
+}
+
+footer { text-align: center; padding: 40px; border-top: 1px solid #1e293b; color: #475569; font-size: 0.8rem; }
