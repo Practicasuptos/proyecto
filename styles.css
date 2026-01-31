@@ -1,3 +1,4 @@
+/* 1. VARIABLES Y CONFIGURACIÓN BASE */
 :root {
     --bg-oscuro: #0a0e1a;
     --bg-bloque: #121b2d;
@@ -14,6 +15,13 @@ body {
     line-height: 1.8;
 }
 
+/* 2. TEXTO JUSTIFICADO (Solo para bloques de información) */
+.contenido-extenso p, 
+.articulo-fluido p {
+    text-align: justify;
+}
+
+/* 3. HEADER Y NAVEGACIÓN */
 header {
     background: #020617;
     height: 70px;
@@ -31,17 +39,67 @@ header {
     height: 100%;
 }
 
-.logo { color: var(--cian); font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; }
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--cian);
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
 
-nav ul { display: flex; list-style: none; }
-nav ul li a { color: white; text-decoration: none; margin-left: 25px; font-size: 0.85rem; text-transform: uppercase; transition: 0.3s; }
-nav ul li a:hover, nav ul li a.active { color: var(--cian); }
+.logo img {
+    max-height: 40px;
+    width: auto;
+    margin-right: 12px;
+}
 
-.carrusel { height: 350px; overflow: hidden; position: relative; }
-.slider { display: flex; width: 200%; height: 100%; animation: slideMove 12s infinite ease-in-out; }
-.slide { width: 50%; height: 100%; position: relative; }
-.img-slider { width: 100%; height: 100%; object-fit: cover; }
-.texto-slide { position: absolute; bottom: 30px; left: 8%; background: rgba(0,0,0,0.8); padding: 15px; border-left: 4px solid var(--cian); }
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: var(--cian);
+}
+
+/* 4. CARRUSEL (Página Inicio) */
+.carrusel {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+}
+
+.slider {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    animation: slideMove 12s infinite ease-in-out;
+}
+
+.slide {
+    width: 50%;
+    height: 100%;
+}
+
+.img-slider {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 @keyframes slideMove {
     0%, 45% { transform: translateX(0); }
@@ -49,21 +107,152 @@ nav ul li a:hover, nav ul li a.active { color: var(--cian); }
     100% { transform: translateX(0); }
 }
 
-main { max-width: 1000px; margin: 40px auto; padding: 0 5%; }
-h1, h2 { color: var(--cian); font-size: 2.2rem; }
-.articulo-fluido { margin-bottom: 40px; }
-.img-articulo { width: 100%; max-width: 500px; border-radius: 8px; margin: 15px 0; border: 1px solid var(--cian); }
-.separador { border: 0; border-top: 1px solid #1e293b; margin: 40px 0; }
+/* 5. CONTENIDO PRINCIPAL */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 5%;
+}
 
+h1, h2 {
+    color: var(--cian);
+    font-size: 2.2rem;
+}
+
+/* 6. CAJAS DE INFORMACIÓN (Tarjetas) */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.tarjeta-inicio {
+    background: var(--bg-bloque);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    border-left: 4px solid var(--cian);
+}
+
+.tarjeta-inicio h3 {
+    font-size: 1.1rem;
+    color: var(--cian);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tarjeta-inicio p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--texto-p);
+    text-align: left; /* No justificar en tarjetas cortas */
+    margin: 0;
+}
+
+/* 7. IMÁGENES Y VIDEOS - TODOS IGUALES PERO EN SU POSICIÓN ORIGINAL */
+.img-articulo {
+    width: 100%;
+    max-width: 500px;
+    height: auto; /* Altura automática como antes */
+    border-radius: 8px;
+    margin: 15px 0; /* MARGEN ORIGINAL - no auto */
+    border: 1px solid var(--cian);
+    display: block;
+}
+
+.video-concepto {
+    width: 100%;
+    max-width: 500px;
+    height: 400px; /* Altura fija como tenías */
+    display: block;
+    margin: 10px 0 30px 0; /* MARGEN ORIGINAL */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* VIDEOS DE DRIVE - EXACTO MISMO TAMAÑO Y POSICIÓN */
+.video-drive {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0 30px 0; /* MISMO MARGEN que .video-concepto */
+    display: block;
+    background-color: #000;
+}
+
+.separador {
+    border: 0;
+    border-top: 1px solid #1e293b;
+    margin: 40px 0;
+}
+
+/* 8. FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #1e293b;
+    color: #475569;
+    font-size: 0.8rem;
+}
+
+/* 9. RESPONSIVE (Celulares) */
 #check { display: none; }
 .checkbtn { display: none; flex-direction: column; cursor: pointer; }
 .checkbtn span { width: 25px; height: 3px; background: white; margin: 2px 0; }
 
 @media (max-width: 768px) {
+    .nav-container { padding: 0 5%; }
+    .contenedor-tarjetas { flex-direction: column; }
+    
+    /* IMÁGENES Y VIDEOS RESPONSIVE */
+    .video-concepto,
+    .video-drive {
+        max-width: 100%; /* Ocupar todo el ancho */
+        height: 300px; /* Altura menor */
+    }
+    
+    .img-articulo {
+        max-width: 100%; /* Igual para imágenes */
+        height: auto; /* Mantener proporción */
+    }
+    
     .checkbtn { display: flex; }
-    nav { position: fixed; width: 100%; height: 100vh; background: #020617; top: 70px; left: -100%; transition: 0.5s; }
-    nav ul { flex-direction: column; align-items: center; padding-top: 40px; }
-    #check:checked ~ nav { left: 0; }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #020617;
+        top: 70px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 999;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+    
+    nav ul li { margin: 15px 0; }
+    
+    nav ul li a {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+    
+    #check:checked ~ nav {
+        left: 0;
+    }
 }
 
-footer { text-align: center; padding: 40px; border-top: 1px solid #1e293b; color: #475569; font-size: 0.8rem; }
+@media (max-width: 480px) {
+    .video-concepto,
+    .video-drive {
+        height: 250px; /* Más pequeño en celulares */
+    }
+}
