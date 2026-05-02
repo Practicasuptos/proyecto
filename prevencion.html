@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medidas de Prevención - Los Olivos</title>
+    <title>Medidas de Prevención - URB Los Olivos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="nav-container">
-            <div class="logo">Ciberseguridad</div>
+            <div class="logo">
+                <a href="https://www.google.com/maps/search/?api=1&query=Urbanizaci%C3%B3n+Los+Olivos+Cuman%C3%A1+Sucre" target="_blank">
+                    <img src="imagenes/logo.png" alt="Icono">
+                    URB Los Olivos
+                </a>
+            </div>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><span></span><span></span><span></span></label>
             <nav>
@@ -24,57 +30,144 @@
 
     <main class="contenido-extenso">
         <h2>Medidas de Prevención</h2>
-        <p>Sigue estos pasos para estar seguro:</p>
+        <p>Aplicar estas recomendaciones reduce significativamente el riesgo de sufrir ataques informáticos.</p>
 
+        <!-- 1. Contraseñas Fuertes (texto modificado) -->
         <div class="articulo-fluido">
             <h3>1. Contraseñas Fuertes</h3>
-            <p>No uses fechas de nacimiento, ni cosas comunes. Mezcla letras, números y puntos para mayor seguridad.</p>
+            <p>Una buena contraseña debe tener al menos 12 caracteres e incluir mayúsculas, minúsculas, números y símbolos. Evita palabras del diccionario o información personal como nombres de mascotas. Un truco útil es crear una frase larga que solo tú recuerdes, además cambia tus contraseñas cada tres meses y nunca las compartas por correo o mensaje de texto. Para gestionar varias claves de forma segura, puedes usar un administrador de contraseñas como Bitwarden o KeePass.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">La reutilización de contraseñas es una de las principales causas de propagación de ataques. Cuando un servicio sufre una filtración, los ciberdelincuentes prueban esas credenciales en otros sitios (bancos, redes sociales, correo). Un gestor de contraseñas genera claves aleatorias y las almacena cifradas; así solo necesitas recordar una contraseña maestra robusta. Complementa con autenticación de dos factores para una protección casi absoluta.</div>
         </div>
 
+        <!-- 2. No abrir enlaces sospechosos -->
         <div class="articulo-fluido">
-            <h3>2. No abras links raros</h3>
-            <p>Si te llega un premio por WhatsApp, correo u otro medio, no lo abras. Es casi siempre una estafa.</p>
+            <h3>2. No abrir enlaces sospechosos</h3>
+            <p>Si recibes un mensaje con un premio, una alerta de seguridad falsa o una factura inesperada, no hagas clic en el enlace. Verifica siempre la dirección real del remitente.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Los ciberdelincuentes utilizan la urgencia psicológica para que actúes sin pensar. Antes de pulsar un enlace, pasa el ratón por encima para ver la URL real. Si el dominio no coincide con el oficial (por ejemplo, “banco-falso.com” en lugar de “banco.com”), es un intento de phishing. Los bancos y entidades gubernamentales nunca piden datos personales mediante enlaces enviados por correo o WhatsApp. Cuando tengas dudas, escribe la dirección web manualmente en el navegador.</div>
         </div>
 
+        <!-- 3. Activar la doble verificación -->
         <div class="articulo-fluido">
-            <h3>3. Doble Verificación</h3>
-            <p>Activa esto en WhatsApp, correo y donde se pueda. Te pide un código al celular y así nadie puede robarte la cuenta.</p>
+            <h3>3. Activar la doble verificación</h3>
+            <p>La autenticación de dos factores (2FA) añade una capa extra de seguridad: además de la contraseña, necesitas un código temporal que llega a tu teléfono o se genera en una aplicación.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Activa 2FA en todas las cuentas que lo permitan: correo electrónico, redes sociales, servicios bancarios y almacenamiento en la nube. Existen varios métodos: SMS (menos seguro porque pueden interceptarlo), aplicaciones como Google Authenticator o Authy, y llaves físicas (FIDO2). La opción más segura es usar una aplicación autenticadora o una llave de seguridad. Así, aunque roben tu contraseña, no podrán acceder sin el segundo factor.</div>
         </div>
 
-        <hr class="separador">
-        <h3>4. Haz Copias de Seguridad</h3>
-        <p>Guarda tus fotos en un pendrive por si un virus borra la computadora.</p>
-
+        <!-- 4. Realizar copias de seguridad -->
         <div class="articulo-fluido">
-            <h3>5. No repitas claves ni usuarios</h3>
-            <p>No uses la misma contraseña para todo. Si un 
-                "hacker" descubre la clave de tu Facebook, Correo, Banco, intentará usar esa misma para entrar a tus otras cuentas,
-                Usa una diferente para cada cuenta y así estarás más seguro.</p>
+            <h3>4. Realizar copias de seguridad</h3>
+            <p>Guarda periódicamente tus documentos, fotos y archivos importantes en un disco externo o en la nube. Esto te protegerá ante un ataque de ransomware o una avería del disco duro.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Aplica la regla 3-2-1: al menos tres copias de tus datos, en dos tipos de almacenamiento diferentes (un disco externo y un servicio en la nube), y una de ellas guardada en un lugar fuera de tu vivienda. Programa copias automáticas semanales y verifica periódicamente que puedas restaurar la información. Servicios como Google Drive, OneDrive o iCloud son prácticos, pero para archivos muy sensibles considera un disco duro externo encriptado.</div>
         </div>
 
+        <!-- 5. No repetir contraseñas -->
         <div class="articulo-fluido">
-            <h3>6. Actualiza tus Apps</h3>
-            <p>Las actualizaciones cierran los huecos por donde entran los virus.</p>
+            <h3>5. No repetir contraseñas</h3>
+            <p>Usar la misma clave en varias cuentas es un riesgo enorme. Si un servicio es hackeado, los atacantes probarán esas credenciales en otros sitios.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Para gestionar decenas de contraseñas únicas sin volverte loco, emplea un gestor de contraseñas. Estas herramientas generan claves aleatorias de hasta 20 caracteres y las recuerdan por ti. Solo tendrás que memorizar una contraseña maestra, que debe ser extremadamente robusta. Algunos gestores también avisan si una de tus cuentas está en una filtración conocida (por ejemplo, mediante el servicio “Have I Been Pwned”).</div>
         </div>
 
+        <!-- 6. Mantener todo actualizado -->
         <div class="articulo-fluido">
-            <h3>7. Evita Wi-Fi Abiertos</h3>
-            <p>No abras el banco en el Wi-Fi de la plaza. Alguien podría estar robando tus datos allí.</p>
+            <h3>6. Mantener todo actualizado</h3>
+            <p>Las actualizaciones del sistema operativo, navegadores y aplicaciones incluyen parches de seguridad que corrigen vulnerabilidades conocidas.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Los ciberdelincuentes explotan vulnerabilidades que ya han sido solucionadas en versiones recientes. Activa las actualizaciones automáticas tanto en tu ordenador como en tu teléfono móvil. No pospongas los reinicios necesarios para instalar parches, especialmente si usas el equipo para banca online o trabajo. También actualiza el firmware del router y de cualquier dispositivo conectado a Internet (cámaras, asistentes de voz, etc.).</div>
         </div>
 
+        <!-- 7. Evitar redes Wi-Fi abiertas -->
         <div class="articulo-fluido">
-            <h3>8. Cerrar Sesiones</h3>
-            <p>Si usas una PC que no es tuya, cierra siempre tu sesión al terminar.</p>
+            <h3>7. Evitar redes Wi-Fi abiertas</h3>
+            <p>Las redes públicas sin contraseña (cafeterías, aeropuertos, plazas) son peligrosas porque cualquiera puede interceptar tu tráfico.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">En una red abierta, un atacante puede realizar un ataque “man-in-the-middle” para robar tus credenciales. Si necesitas conectarte, evita introducir contraseñas o hacer transacciones. Una VPN de confianza cifra toda tu comunicación, haciendo mucho más difícil la intercepción. Mejor aún, utiliza tus datos móviles cuando requieras operaciones sensibles fuera de casa. En casa, cambia la contraseña del router por una robusta y usa WPA2 o WPA3.</div>
         </div>
 
+        <!-- 8. Cerrar sesión en equipos compartidos -->
         <div class="articulo-fluido">
-            <h3>9. Baja de Sitios Oficiales</h3>
-            <p>Usa solo la Play Store o Paginas Oficiles. Las apps de páginas raras suelen traer virus.</p>
+            <h3>8. Cerrar sesión en equipos compartidos</h3>
+            <p>En cibercafés, computadoras de trabajo o equipos de familiares, siempre cierra tu sesión y no guardes contraseñas en el navegador.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">No basta con cerrar la pestaña; usa la opción explícita de “Cerrar sesión” o “Log out”. Además, borra el historial, cookies y caché del navegador al terminar. Desmarca la casilla “Recordar contraseña”. Si olvidaste cerrar sesión en algún sitio, muchos servicios permiten revocar el acceso remoto desde la configuración de seguridad (por ejemplo, “Cerrar sesión en todos los dispositivos”).</div>
+        </div>
+
+        <!-- 9. Descargar solo de sitios oficiales -->
+        <div class="articulo-fluido">
+            <h3>9. Descargar solo de sitios oficiales</h3>
+            <p>Las tiendas de aplicaciones oficiales (Google Play Store, Apple App Store) y las páginas web de los desarrolladores verificados son las únicas fuentes seguras.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Descargar software de páginas no oficiales es una de las principales vías de entrada de malware. Los “cracks” o “keygens” suelen contener troyanos, ransomware o mineros de criptomonedas. Revisa los permisos que solicita una app: si una calculadora pide acceso a tus contactos o SMS, es sospechosa. Lee los comentarios de otros usuarios y verifica la reputación del desarrollador.</div>
+        </div>
+
+        <!-- 10. Usar un antivirus confiable -->
+        <div class="articulo-fluido">
+            <h3>10. Usar un antivirus confiable</h3>
+            <p>Un antivirus actualizado analiza archivos en tiempo real, bloquea sitios web maliciosos y detecta comportamientos anómalos.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Windows ya incluye Microsoft Defender, que es suficiente con una configuración adecuada. Si deseas más funciones, opciones como Kaspersky, Bitdefender o Avast (versión gratuita) ofrecen buena protección. Programa análisis periódicos completos y mantén las definiciones de virus al día. No instales dos antivirus simultáneamente, ya que pueden generar conflictos. Recuerda que el antivirus es complementario a las buenas prácticas, no un sustituto.</div>
+        </div>
+
+        <!-- 11. No compartir información personal en redes sociales -->
+        <div class="articulo-fluido">
+            <h3>11. No compartir información personal en redes sociales</h3>
+            <p>Dirección, número de teléfono, fotos de documentos, horarios o datos de tus hijos son un tesoro para los ciberdelincuentes.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Los atacantes recolectan información de redes sociales para responder preguntas de seguridad (“nombre de tu primera mascota”, “colegio donde estudiaste”) o para realizar ingeniería social avanzada. Configura tu perfil como privado y no aceptes solicitudes de amistad de desconocidos. Ten cuidado con los cuestionarios virales que piden datos personales; suelen ser trampas para recopilar información. Piensa siempre antes de publicar: ¿puede alguien usar esto para suplantarme?</div>
+        </div>
+
+        <!-- 12. Proteger el correo electrónico -->
+        <div class="articulo-fluido">
+            <h3>12. Proteger el correo electrónico</h3>
+            <p>El correo es el principal vector de phishing y malware. No abras adjuntos de remitentes desconocidos y habilita el filtro antispam.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Crea diferentes cuentas de correo: una para trámites importantes (banco, gobierno), otra para redes sociales y registros en tiendas, y una tercera para suscripciones o newsletters. Así, si una cuenta se ve comprometida, el daño es limitado. Desconfía de correos que te pidan verificar datos urgentemente o que contengan errores gramaticales. Nunca descargues archivos .exe, .scr o .js recibidos por email sin verificar su origen.</div>
+        </div>
+
+        <!-- 13. Desconfiar de llamadas o mensajes urgentes (Vishing/Smishing) NUEVA -->
+        <div class="articulo-fluido">
+            <h3>13. Desconfiar de llamadas o mensajes urgentes</h3>
+            <p>Los ciberdelincuentes también usan llamadas telefónicas (vishing) o SMS (smishing) para suplantar identidades y robar información.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Si recibes una llamada de alguien que dice ser de tu banco, de una empresa de servicios públicos o de una entidad gubernamental y te pide datos personales o códigos, cuelga inmediatamente. Nunca devuelvas la llamada al número que te dejaron; busca el número oficial en la página web de la entidad. Los estafadores suelen generar urgencia (“su cuenta será bloqueada en una hora”) para que actúes sin pensar. Recuerda: ninguna organización seria solicita contraseñas o códigos 2FA por teléfono o SMS.</div>
+        </div>
+
+        <!-- 14. Revisar permisos de aplicaciones móviles NUEVA -->
+        <div class="articulo-fluido">
+            <h3>14. Revisar permisos de aplicaciones móviles</h3>
+            <p>Muchas apps piden permisos innecesarios que pueden exponer tu privacidad o permitir la instalación de malware.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Antes de instalar una aplicación, revisa los permisos que solicita. Una linterna no necesita acceso a tus contactos, cámara o micrófono. Un juego no debería leer tus SMS. Si una app pide permisos desproporcionados, es mejor no instalarla. En Android, puedes denegar permisos de manera granular; en iOS, el sistema también te alerta. Periódicamente, revisa los permisos de las apps ya instaladas y revoca aquellos que no sean esenciales.</div>
+        </div>
+
+        <!-- 15. Utilizar redes privadas virtuales (VPN) NUEVA -->
+        <div class="articulo-fluido">
+            <h3>15. Utilizar redes privadas virtuales (VPN)</h3>
+            <p>Una VPN cifra tu conexión a Internet, ocultando tu actividad y protegiéndote en redes Wi-Fi públicas.</p>
+            <button class="btn-mas-info">+ Más información</button>
+            <div class="info-extra">Las VPN son especialmente útiles cuando viajas o te conectas a redes abiertas. Elige un proveedor de confianza que no guarde registros de actividad y que ofrezca protocolos robustos (OpenVPN, WireGuard). Algunas VPN gratuitas pueden ser inseguras o vender tus datos. Investiga antes de instalar una. Una VPN no te hace invulnerable, pero añade una capa importante de cifrado. También puede ayudarte a evitar la censura geográfica, pero su principal función en ciberseguridad es la privacidad en redes no confiables.</div>
         </div>
     </main>
 
     <footer>
         <p>Realizado por: Carlos Solorzano, Leonardo Rodríguez, Óscar Guanchez, Leonel Coronado</p>
+       </p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.btn-mas-info').forEach(btn => {
+            btn.addEventListener('click', function() {
+                let extraDiv = this.nextElementSibling;
+                if (extraDiv && extraDiv.classList.contains('info-extra')) {
+                    extraDiv.classList.toggle('mostrar');
+                    this.textContent = extraDiv.classList.contains('mostrar') ? '- Menos información' : '+ Más información';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
