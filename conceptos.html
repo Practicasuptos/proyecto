@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conceptos Clave</title>
+    <title>Conceptos Clave - Urbanización Los Olivos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="imagenes/logo.png" type="image/png">
 </head>
@@ -11,8 +11,10 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="imagenes/logo.png" alt="Icono" class="img-logo">
-                Los Olivos
+                <a href="https://www.google.com/maps/search/?api=1&query=Urbanizaci%C3%B3n+Los+Olivos+Cuman%C3%A1+Sucre" target="_blank">
+                    <img src="imagenes/logo.png" alt="Icono">
+                    Urbanización Los Olivos
+                </a>
             </div>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><span></span><span></span><span></span></label>
@@ -29,98 +31,136 @@
     <main class="contenido-extenso">
         <h2>Conceptos Clave</h2>
 
-        <!-- MALWARE -->
+        <!-- Concepto 1: MALWARE -->
         <div class="articulo-fluido">
             <h3>Malware</h3>
             <p>Es cualquier programa "malo" que se mete en tu equipo sin permiso para espiar, robar datos o dañar el sistema.</p>
             <img src="imagenes/Malware.avif" alt="Malware" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/11T2PnZHI6KI4kXdSm5fs1FzTndGURQPp/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/11T2PnZHI6KI4kXdSm5fs1FzTndGURQPp/preview" class="video-drive" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalMalware">Saber más →</button>
         </div>
 
-        <!-- PHISHING -->
+        <!-- Modal Malware -->
+        <div id="modalMalware" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h3>Malware: Explicación detallada</h3>
+                <p>El término "malware" proviene de "malicious software" (software malicioso). Incluye cualquier programa diseñado específicamente para infiltrarse, dañar o realizar acciones no autorizadas en un sistema informático sin el consentimiento del usuario. Existen múltiples tipos: virus, gusanos, troyanos, ransomware, spyware, adware, rootkits, etc. El malware puede llegar a través de descargas de sitios web no confiables, archivos adjuntos de correos electrónicos engañosos, o dispositivos USB infectados.</p>
+                <p>Una vez dentro, el malware puede robar información personal, cifrar archivos para pedir rescate, registrar pulsaciones de teclado (keyloggers), mostrar publicidad no deseada o incluso convertir el equipo en parte de una botnet para atacar a otros. Para protegerse, es fundamental mantener actualizados el sistema operativo y el antivirus, evitar hacer clic en enlaces sospechosos y descargar solo de fuentes oficiales.</p>
+            </div>
+        </div>
+
+        <!-- Concepto 2: PHISHING -->
         <div class="articulo-fluido">
             <h3>Phishing</h3>
-            <p>Es una técnica de engaño donde se hacen pasa por bancos o redes sociales para robarte las claves y tu dinero.</p>
+            <p>Es una técnica de engaño donde se hacen pasar por bancos o redes sociales para robarte las claves y tu dinero.</p>
             <img src="imagenes/Phishing.png" alt="Phishing" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1gLlB6EmwS7wuRRJIWc9Kw7E7R3nbf16s/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1gLlB6EmwS7wuRRJIWc9Kw7E7R3nbf16s/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalPhishing">Saber más →</button>
         </div>
 
-        <!-- PHARMING -->
+        <!-- Modal Phishing -->
+        <div id="modalPhishing" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h3>Phishing: Explicación detallada</h3>
+                <p>El phishing es un tipo de ciberataque basado en la ingeniería social. Los atacantes suplantan la identidad de una entidad legítima (banco, red social, empresa de mensajería) y envían mensajes masivos (correo, SMS, WhatsApp) que contienen un enlace a una página web falsa, casi idéntica a la original. Cuando la víctima introduce sus credenciales, estas son enviadas directamente a los delincuentes.</p>
+                <p>Las señales de un intento de phishing incluyen: errores ortográficos, direcciones de correo extrañas, mensajes que generan urgencia ("su cuenta será cerrada en 24 horas"), o enlaces que no coinciden con el dominio oficial. Para protegerse, nunca se debe hacer clic en enlaces sospechosos. Es recomendable escribir manualmente la dirección del sitio en el navegador y verificar que el candado de seguridad (https) esté presente. Además, activar la autenticación de dos factores añade una capa extra de protección.</p>
+            </div>
+        </div>
+
+        <!-- Concepto 3: PHARMING -->
         <div class="articulo-fluido">
             <h3>Pharming</h3>
             <p>Redirige tu navegador a sitios web falsos aunque escribas la dirección correcta.</p>
             <img src="imagenes/Pharming.jpg" alt="Pharming" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1UAwwfc5ptqWf88GQSH4qWAlkZyY6tL2x/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1UAwwfc5ptqWf88GQSH4qWAlkZyY6tL2x/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalPharming">Saber más →</button>
         </div>
 
-        <!-- CIBERSEGURIDAD -->
+        <!-- Modal Pharming -->
+        <div id="modalPharming" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h3>Pharming: Explicación detallada</h3>
+                <p>El pharming es más peligroso que el phishing porque no requiere que el usuario haga clic en un enlace malicioso. En este ataque, los ciberdelincuentes manipulan el sistema de resolución de nombres de dominio (DNS) o infectan el archivo "hosts" del equipo. Así, cuando la víctima escribe la dirección correcta de un banco, el navegador es llevado a un sitio falso sin que ella lo note. La página falsa puede ser idéntica a la real y robar las credenciales ingresadas.</p>
+                <p>Para prevenir el pharming, es importante usar servidores DNS confiables (como los de Google 8.8.8.8 o Cloudflare 1.1.1.1), mantener actualizado el sistema operativo y el antivirus, y verificar siempre que la dirección web comience con "https://" y que el certificado de seguridad sea válido. También se puede instalar extensiones del navegador que alertan sobre sitios sospechosos.</p>
+            </div>
+        </div>
+
+        <!-- Concepto 4: CIBERSEGURIDAD -->
         <div class="articulo-fluido">
             <h3>Ciberseguridad</h3>
             <p>Es la protección de computadoras, redes y datos contra ataques digitales o accesos no autorizados.</p>
             <img src="imagenes/ciberseguridad.webp" alt="Ciberseguridad" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1bmLAYnDXEpKP9ca75iyG6NJmXs-g-1E1/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1bmLAYnDXEpKP9ca75iyG6NJmXs-g-1E1/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalCiberseguridad">Saber más →</button>
         </div>
 
-        <!-- CIBERDELINCUENTE -->
+        <!-- Modal Ciberseguridad -->
+        <div id="modalCiberseguridad" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h3>Ciberseguridad: Explicación detallada</h3>
+                <p>La ciberseguridad es el conjunto de prácticas, procesos y tecnologías diseñadas para proteger sistemas informáticos, redes, dispositivos y datos de ataques, daños o accesos no autorizados. Abarca desde la seguridad de la información (confidencialidad, integridad y disponibilidad) hasta la protección de infraestructuras críticas. Incluye medidas como firewalls, antivirus, cifrado, autenticación multifactor, copias de seguridad y políticas de seguridad para usuarios.</p>
+                <p>En un mundo cada vez más conectado, la ciberseguridad es esencial tanto para empresas como para particulares. Un fallo en esta área puede derivar en robo de identidad, pérdida económica, daño a la reputación o incluso afectar servicios esenciales. La educación y la concienciación de los usuarios son componentes fundamentales, ya que la mayoría de los incidentes de seguridad involucran algún error humano.</p>
+            </div>
+        </div>
+
+        <!-- Concepto 5: CIBERDELINCUENTE -->
         <div class="articulo-fluido">
             <h3>Ciberdelincuente</h3>
             <p>Persona que comete delitos utilizando internet y la tecnología, como robar información o dinero en línea.</p>
             <img src="imagenes/ciberdelincuente.avif" alt="Ciberdelincuente" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1EkrSSG4mJGh_VfuiBBsRcZLIxtepVE30/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1EkrSSG4mJGh_VfuiBBsRcZLIxtepVE30/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalCiberdelincuente">Saber más →</button>
         </div>
 
-        <!-- FIREWALL -->
+        <!-- Modal Ciberdelincuente -->
+        <div id="modalCiberdelincuente" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h3>Ciberdelincuente: Explicación detallada</h3>
+                <p>Un ciberdelincuente es un individuo o grupo que utiliza tecnologías de la información para cometer actos ilegales. Estos delitos pueden ser contra personas (robo de identidad, fraudes), contra empresas (extorsión, espionaje industrial) o contra gobiernos (ciberterrorismo). Los ciberdelincuentes pueden actuar de forma individual (hackers con fines económicos o ideológicos) o formar parte de organizaciones criminales sofisticadas.</p>
+                <p>Entre sus técnicas más habituales están el phishing, la distribución de malware, los ataques de ransomware, la suplantación de identidad y la explotación de vulnerabilidades de software. Las motivaciones van desde el beneficio económico hasta el activismo político o el simple vandalismo. Para combatirlos, las fuerzas de seguridad y las empresas de ciberseguridad trabajan en la identificación, seguimiento y desmantelamiento de sus infraestructuras, pero la prevención y la educación del usuario siguen siendo la mejor defensa.</p>
+            </div>
+        </div>
+
+        <!-- Concepto 6: FIREWALL -->
         <div class="articulo-fluido">
             <h3>Firewall</h3>
             <p>Es como una pared de seguridad que revisa quién intenta entrar a tu internet y bloquea a los sospechosos.</p>
             <img src="imagenes/Firewall.png" alt="Firewall" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1-x4F37B-R57SzaHQ7ihTuWsVvyYyxo_v/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1-x4F37B-R57SzaHQ7ihTuWsVvyYyxo_v/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalFirewall">Saber más →</button>
+        </div>
+
+        <!-- Modal Firewall -->
+        <div id="modalFirewall" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h3>Firewall: Explicación detallada</h3>
+                <p>Un firewall (cortafuegos) es un sistema de seguridad que monitorea y controla el tráfico de red entrante y saliente basándose en reglas predefinidas. Actúa como una barrera entre una red interna confiable (como tu hogar u oficina) y redes no confiables (como Internet). Puede ser hardware (un dispositivo físico) o software (programa instalado en el dispositivo).</p>
+                <p>El firewall analiza los paquetes de datos y permite o bloquea su paso según criterios como dirección IP, puerto o protocolo. Por ejemplo, puede impedir que un programa malicioso envíe información sensible desde tu computadora a un servidor externo sin tu permiso. En los sistemas operativos modernos (Windows, macOS, Linux) ya vienen incluidos firewalls básicos, pero es importante configurarlos correctamente y no desactivarlos.</p>
+            </div>
         </div>
 
         <hr class="separador">
         <h2>Malwares y Amenazas Comunes</h2>
+
+        <!-- A partir de aquí se repite el mismo patrón para los 10 malwares: Virus, Troyano, Gusano, Ransomware, Spyware, Adware, Botnet, Rootkit, Keylogger, Scareware, Rogueware -->
+        <!-- Por razones de espacio, voy a listar solo un ejemplo (Virus) con su modal, y luego indico que debes replicar para los demás con su propio texto. Para no hacer infinito, te doy el texto completo de cada modal al final. Al final del mensaje te entrego el archivo completo listo para copiar. -->
 
         <!-- VIRUS -->
         <div class="articulo-fluido">
             <h3>Virus</h3>
             <p>Tipo de malware que se adjunta a programas legítimos y se propaga para dañar archivos y sistemas.</p>
             <img src="imagenes/virus.jpg" alt="Virus" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1MmduVzW7lUxdH4Vexlpijnep_r5Ku7d0/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1MmduVzW7lUxdH4Vexlpijnep_r5Ku7d0/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalVirus">Saber más →</button>
+        </div>
+        <div id="modalVirus" class="modal">
+            <div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Virus: Explicación detallada</h3><p>Un virus informático es un programa malicioso que se replica a sí mismo insertando copias de su código en otros archivos ejecutables o documentos. Para activarse, normalmente necesita que el usuario ejecute el programa infectado. Una vez activo, puede dañar archivos, corromper datos, ralentizar el sistema o incluso borrar información. Los virus se propagan a través de dispositivos USB, descargas de internet o archivos adjuntos de correo.</p><p>Es importante no confundir virus con malware: los virus son solo una categoría dentro del malware. El uso de un antivirus actualizado y la precaución al abrir archivos desconocidos son las principales defensas contra los virus.</p></div>
         </div>
 
         <!-- TROYANO -->
@@ -128,134 +168,134 @@
             <h3>Troyano</h3>
             <p>Parece un programa normal, pero por dentro trae un virus escondido para controlar tu equipo.</p>
             <img src="imagenes/Troyano.jpg" alt="Troyano" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/17QAV-Hu-AAYoBMqULstZJqwgxPnY2mKg/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/17QAV-Hu-AAYoBMqULstZJqwgxPnY2mKg/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalTroyano">Saber más →</button>
         </div>
+        <div id="modalTroyano" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Troyano: Explicación detallada</h3><p>Un troyano (o caballo de Troya) es un tipo de malware que se disfraza de software legítimo para engañar al usuario y que lo instale voluntariamente. A diferencia de los virus, no se replica por sí mismo, pero puede abrir puertas traseras para que el atacante controle el equipo, robe información o descargue otras amenazas. Los troyanos suelen llegar en descargas de programas "crackeados", juegos gratuitos o adjuntos de correo engañosos. Una vez activos, pueden robar contraseñas, capturar pulsaciones de teclado o convertir el PC en un zombie para ataques DDoS.</p></div></div>
 
         <!-- GUSANO -->
         <div class="articulo-fluido">
             <h3>Gusano</h3>
             <p>Se mueve solo por el Wi-Fi de la casa, saltando de un teléfono a otro infectando todo.</p>
             <img src="imagenes/Gusano.jpg" alt="Gusano" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1KR4KH7OH8bmCFXv590IABgEads8lPX4a/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1KR4KH7OH8bmCFXv590IABgEads8lPX4a/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalGusano">Saber más →</button>
         </div>
+        <div id="modalGusano" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Gusano: Explicación detallada</h3><p>Un gusano es un malware que se propaga automáticamente a través de redes sin necesidad de intervención del usuario. Explota vulnerabilidades de seguridad para copiarse a otros equipos conectados (por ejemplo, por Wi-Fi o correo electrónico). A diferencia de los virus, no requiere adjuntarse a un programa anfitrión. Los gusanos pueden consumir ancho de banda, saturar redes y provocar caídas del sistema. Para prevenirlos, es esencial mantener actualizados el sistema operativo y las aplicaciones, así como usar un firewall robusto.</p></div></div>
 
         <!-- RANSOMWARE -->
         <div class="articulo-fluido">
             <h3>Ransomware</h3>
             <p>Te bloquea tus archivos con un candado y te pide dinero para poder abrirlos otra vez.</p>
             <img src="imagenes/Ransomware.png" alt="Ransomware" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/11aYp6V5rF_I1FSxlguH-hLOTJq0CGTqf/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/11aYp6V5rF_I1FSxlguH-hLOTJq0CGTqf/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalRansomware">Saber más →</button>
         </div>
+        <div id="modalRansomware" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Ransomware: Explicación detallada</h3><p>El ransomware es un tipo de malware que cifra los archivos de la víctima y exige un rescate económico (normalmente en criptomonedas) a cambio de la clave de descifrado. Puede paralizar empresas, hospitales y particulares. La mejor defensa es realizar copias de seguridad periódicas almacenadas en un lugar seguro y actualizar el software para evitar las vulnerabilidades que explotan. Nunca se recomienda pagar el rescate, ya que no garantiza la recuperación y fomenta más ataques.</p></div></div>
 
         <!-- SPYWARE -->
         <div class="articulo-fluido">
             <h3>Spyware</h3>
             <p>Es un programa espía que mira qué páginas ves y qué escribes sin que te des cuenta.</p>
             <img src="imagenes/Spyware.png" alt="Spyware" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1g1PLqDUcbenowNVO1vTvuzRrvYZJ5ojA/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1g1PLqDUcbenowNVO1vTvuzRrvYZJ5ojA/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalSpyware">Saber más →</button>
         </div>
+        <div id="modalSpyware" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Spyware: Explicación detallada</h3><p>El spyware (software espía) recopila información del usuario sin su consentimiento. Puede registrar hábitos de navegación, pulsaciones de teclado (keylogger), contraseñas, correos electrónicos o incluso activar la cámara web. Estos datos se envían a un atacante que puede usarlos para robo de identidad o fraude. El spyware suele instalarse junto con programas gratuitos o a través de vulnerabilidades del navegador. Un antivirus actualizado y la revisión de permisos de las aplicaciones ayudan a detectarlo y eliminarlo.</p></div></div>
 
         <!-- ADWARE -->
         <div class="articulo-fluido">
             <h3>Adware</h3>
             <p>Virus fastidioso que llena la pantalla de anuncios y pone el internet súper lento.</p>
             <img src="imagenes/Adware.png" alt="Adware" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1dKJODFHcObs29xyUtKuL_0cC3Ttacb4_/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1dKJODFHcObs29xyUtKuL_0cC3Ttacb4_/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalAdware">Saber más →</button>
         </div>
+        <div id="modalAdware" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Adware: Explicación detallada</h3><p>El adware es un programa que muestra anuncios no deseados en el navegador, a menudo en forma de ventanas emergentes, banners o redirecciones. Aunque no suele ser tan dañino como otros malwares, resulta molesto y puede ralentizar el sistema. Además, algunos adwares rastrean los hábitos de navegación para dirigir publicidad. Se instala frecuentemente al descargar software gratuito sin leer los acuerdos. Para evitarlo, se recomienda elegir la instalación personalizada y rechazar componentes adicionales, además de usar bloqueadores de anuncios y mantener el antivirus activo.</p></div></div>
 
         <!-- BOTNET -->
         <div class="articulo-fluido">
             <h3>Botnet</h3>
             <p>Red de computadoras infectadas que un hacker usa para atacar a otros a control remoto.</p>
             <img src="imagenes/Botnet.webp" alt="Botnet" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1qhg5O6i7Rg9_CwZM5kNjtQSP4Bav9Np6/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1qhg5O6i7Rg9_CwZM5kNjtQSP4Bav9Np6/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalBotnet">Saber más →</button>
         </div>
+        <div id="modalBotnet" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Botnet: Explicación detallada</h3><p>Una botnet es una red de dispositivos infectados (bots o zombies) controlados remotamente por un atacante (botmaster). Estos dispositivos pueden ser ordenadores, móviles o routers. El botmaster utiliza la botnet para lanzar ataques de denegación de servicio distribuido (DDoS), enviar spam masivo, robar datos o minar criptomonedas sin consentimiento. Los dispositivos se infectan mediante malware que los conecta a un servidor de comando y control. Para evitar formar parte de una botnet, hay que mantener el software actualizado, usar contraseñas seguras y tener un buen antivirus.</p></div></div>
 
         <!-- ROOTKIT -->
         <div class="articulo-fluido">
             <h3>Rootkit</h3>
             <p>Malware que se esconde profundamente en el sistema para dar control total al atacante sin ser detectado.</p>
             <img src="imagenes/Rootkit.jpg" alt="Rootkit" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1AD7ph0xu7dwIYKurljmHUEr_sdKV3_ja/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1AD7ph0xu7dwIYKurljmHUEr_sdKV3_ja/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalRootkit">Saber más →</button>
         </div>
+        <div id="modalRootkit" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Rootkit: Explicación detallada</h3><p>Un rootkit es un conjunto de herramientas que permiten el acceso de nivel administrativo (root) a un sistema informático mientras oculta su presencia. Puede modificar el núcleo del sistema operativo, los controladores o las aplicaciones para evadir la detección por parte de antivirus. Los rootkits suelen llegar a través de vulnerabilidades o troyanos, y una vez instalados, el atacante puede ejecutar comandos, robar información o instalar otros malwares. Detectarlos es difícil, y en casos graves puede ser necesario formatear el equipo y reinstalar el sistema desde cero.</p></div></div>
 
         <!-- KEYLOGGER -->
         <div class="articulo-fluido">
             <h3>Keylogger</h3>
             <p>Graba cada letra que marcas en el teclado para robar contraseñas del banco.</p>
             <img src="imagenes/Keylogger.jpg" alt="Keylogger" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1mNSGpUJVmTv33DLEJbUVfkXHhlD3_Na-/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1mNSGpUJVmTv33DLEJbUVfkXHhlD3_Na-/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalKeylogger">Saber más →</button>
         </div>
+        <div id="modalKeylogger" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Keylogger: Explicación detallada</h3><p>Un keylogger es un tipo de spyware que registra todas las pulsaciones del teclado. Puede ser software (programa oculto) o hardware (dispositivo físico conectado entre el teclado y la computadora). Los keyloggers capturan contraseñas, números de tarjetas de crédito, conversaciones y cualquier texto escrito. Luego envían esos datos al atacante. Para protegerse, se recomienda usar un antivirus actualizado, un administrador de contraseñas que evite teclear manualmente, y revisar periódicamente el sistema en busca de programas sospechosos.</p></div></div>
 
         <!-- SCAREWARE -->
         <div class="articulo-fluido">
             <h3>Scareware</h3>
             <p>Asusta al usuario con falsas alertas de virus para que compre software innecesario o malicioso.</p>
             <img src="imagenes/Scareware.webp" alt="Scareware" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/1bacFBuRfKkAaM8cBI3gEd-zVwOxpbdfO/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/1bacFBuRfKkAaM8cBI3gEd-zVwOxpbdfO/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalScareware">Saber más →</button>
         </div>
+        <div id="modalScareware" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Scareware: Explicación detallada</h3><p>El scareware es una táctica de ingeniería social que utiliza ventanas emergentes alarmistas ("¡Su computadora está infectada! Descargue este antivirus ya") para asustar al usuario y lograr que pague por un software falso o descargue un malware real. Suele aparecer en sitios web maliciosos o a través de anuncios engañosos. Nunca hay que hacer clic en esas alertas; en su lugar, se debe cerrar el navegador desde el administrador de tareas y ejecutar un escaneo con un antivirus legítimo.</p></div></div>
 
         <!-- ROGUEWARE -->
         <div class="articulo-fluido">
             <h3>Rogueware</h3>
             <p>Se hace pasar por un antivirus legítimo pero en realidad es malware que infecta el sistema.</p>
             <img src="imagenes/Rogueware.webp" alt="Rogueware" class="img-articulo">
-            <iframe 
-                src="https://drive.google.com/file/d/15E6gnaLkrSypnv6CwtUXnVW-IC93tD6W/preview" 
-                class="video-drive"
-                allow="autoplay; encrypted-media; fullscreen"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://drive.google.com/file/d/15E6gnaLkrSypnv6CwtUXnVW-IC93tD6W/preview" class="video-drive" allowfullscreen></iframe>
+            <button class="saber-mas" data-modal="modalRogueware">Saber más →</button>
         </div>
+        <div id="modalRogueware" class="modal"><div class="modal-contenido"><span class="cerrar-modal">&times;</span><h3>Rogueware: Explicación detallada</h3><p>El rogueware (software fraudulento) se disfraza de programa de seguridad legítimo (antivirus, limpiador de registro, etc.) pero en realidad es un malware. Una vez instalado, puede mostrar falsos resultados de escaneo, bloquear el sistema o robar información. Suelen distribuirse a través de descargas engañosas o páginas que imitan a sitios oficiales. Para evitarlo, solo se debe descargar software de seguridad de fuentes confiables y nunca aceptar instalaciones automáticas de ventanas emergentes.</p></div></div>
     </main>
 
     <footer>
         <p>Realizado por: Carlos Solorzano, Leonardo Rodríguez, Óscar Guanchez, Leonel Coronado</p>
     </footer>
+
+    <script>
+        // Funcionalidad para abrir y cerrar modales
+        const botones = document.querySelectorAll('.saber-mas');
+        const modales = document.querySelectorAll('.modal');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', (e) => {
+                const modalId = boton.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                if (modal) modal.style.display = 'block';
+            });
+        });
+
+        function cerrarModal() {
+            modales.forEach(modal => modal.style.display = 'none');
+        }
+
+        // Cerrar al hacer clic en la X
+        document.querySelectorAll('.cerrar-modal').forEach(cerrar => {
+            cerrar.addEventListener('click', cerrarModal);
+        });
+
+        // Cerrar al hacer clic fuera del contenido del modal
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                e.target.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
